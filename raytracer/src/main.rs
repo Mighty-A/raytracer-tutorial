@@ -41,7 +41,7 @@ fn is_ci() -> bool {
 
 fn render_text(image: &mut RgbImage, msg: &str) {
     let font_file = if is_ci() {
-        "EncodeSans-Regular.ttf"
+        "EncodeSans[wdth,wght].ttf"
     } else {
         "/System/Library/Fonts/Helvetica.ttc"
     };
